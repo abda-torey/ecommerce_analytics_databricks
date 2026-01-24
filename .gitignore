@@ -1,0 +1,162 @@
+# ============================================
+# Terraform
+# ============================================
+# Local .terraform directories
+**/.terraform/*
+
+# State files - CRITICAL: Never commit state files
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
+
+# Plan files
+*.tfplan
+tfplan.out
+
+# Variable files with sensitive data
+*.tfvars
+*.tfvars.json
+# Exception: You might want to commit example/template files
+!*.tfvars.example
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# ============================================
+# Python
+# ============================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyTest
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ============================================
+# Databricks
+# ============================================
+# Databricks CLI config (contains tokens)
+.databrickscfg
+
+# Databricks Connect
+.databricks-connect
+
+# ============================================
+# Azure & Environment
+# ============================================
+# Azure credentials
+.azure/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Secrets
+secrets/
+*.secret
+*.key
+*.pem
+
+# ============================================
+# Generated Data & Logs
+# ============================================
+# Data generator outputs
+data-generators/clickstream/ecommerce-events/*.json
+data-generators/clickstream/ecommerce-events/*.csv
+data-generators/clickstream/ecommerce-events/*.parquet
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# ============================================
+# IDE & Editors
+# ============================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ============================================
+# CI/CD
+# ============================================
+# Pipeline artifacts (if generated locally)
+.pipeline/
+
+# ============================================
+# Optional: Dependency Lock Files
+# ============================================
+# Uncomment if you want to ignore Terraform lock file
+# .terraform.lock.hcl
+
+# Python lock files (choose based on your tool)
+# Pipfile.lock
+# poetry.lock
